@@ -16,8 +16,8 @@ import com.google.api.server.spi.config.ApiNamespace;
 public class MyEndpoint {
 
 
-    @ApiMethod(name = "sayHi")
-    public MyBean sayHi() {
+    @ApiMethod(name = "getJoke")
+    public MyBean getJoke() {
         MyBean response = new MyBean();
         response.setData(JokeTeller.getJoke());
         return response;
